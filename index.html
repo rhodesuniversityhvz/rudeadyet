@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>RUDeadYet</title>
+  <meta name="description" content="RUDeadYet">
+
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+	<div class="poop">
+      <!-- <form action="/signup.php" method="get"> -->
+           <!-- <input type="text" placeholder="Enter Student Number" id="email" name="email" required> -->
+          <button type="submit" class="registerbtn" onclick="saveFile()">Sign Up Soon</button>
+      <!-- </form> --> -->
+      <h1></h1>
+   </div>
+  
+    <script type="text/javascript">
+        writeFile(emails.txt, Document.getElementById())
+    </script>
+
+<div class="wrapper">
+    <div class="moon"></div>
+   <!div class="container">
+      <!form action="/action_page.php" method="get">
+          <!input type="text" placeholder="Enter Student Number" name="email" required>
+          <!button type="submit" class="registerbtn">Sign Up For HvZ</button>
+      <!/form>
+	<!/div>
+	  	  
+    <div class="long-field">
+        <div class="cross-left"></div>
+        <div class="cross-center"></div>
+        <div class="cross-right"></div>
+        <div class="tomb-left"></div>
+        <div class="tomb-center"></div>
+        <div class="tomb-right"></div>
+    </div>
+    <div class="main-tomb">
+        <div class="spots"></div>
+        <div class="topic">New Site will rise soon</div>
+    </div>
+    <div class="rock-1"></div>
+    <div class="rock-2"></div>
+    <div class="rock-3"></div>
+    <div class="rock-4"></div>
+    <div class="rock-5"></div>
+    <div class="rock-6"></div>
+    <div class="rock-7"></div>
+    <div class="rock-8"></div>
+    <div class="rock-9"></div>
+    <div class="rock-10"></div>
+    <div class="rock-11"></div>
+    <div class="rock-12"></div>
+    <div class="zombie-wrapper">
+        <div class="zombie">
+            <div class="bone"></div>
+            <div class="cuff"></div>
+            <div class="arm"></div>
+        </div>
+    </div>
+    <div class="earth-bumps">
+        <div class="bump"></div>
+        <div class="bump"></div>
+        <div class="bump"></div>
+    </div>
+    <div class="fog"></div>
+    <script>
+        let saveFile = () => {
+            
+            // Get the data from each element on the form.
+            const emailA = document.getElementById('email');
+
+            let data = emailA + '\r@campus.ru.ac.za\n';
+             
+             // Convert the text to BLOB.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'emails.txt';	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
+</script>
+</body>
+</html>
